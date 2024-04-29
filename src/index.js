@@ -39,7 +39,8 @@ import store from "./AGGrid/store";
 // import App from "./Dropdown";
 // import App from "./SetTimeoutCustomhook";
 // import App from "./LazyLoading"
-import App from "./RenderProps";
+// import App from "./RenderProps";
+import App from "./InfiniteScroll";
 
 // const store = createStore(
 //   rootReducer,
