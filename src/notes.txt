@@ -1,0 +1,20 @@
+Redux react 
+How rooks work behind the scenes 
+useCallback vs useMemo vs React.memo
+LocalStorage vs SessionStorage
+Cookies
+Cookies in React 
+WebWorker and ServiceWorker 
+Protected Routes / Private Routes 
+React bootstrap and material UI 
+useSelector and useDispatch
+when useSelector is used, if state is not changed it wont re render the components.
+HOC
+Lifecycle events in functional components
+Using mapStateToProps and mapDispatchtoProps in functional components
+Event bubbling events
+Alternative of shouldComponentUpdate in functional components
+Redux Toolkit
+SASS mixins
+React configuration with babel and webpack
+CI CD React

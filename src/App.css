@@ -1,5 +1,15 @@
-.App {
+body,
+html {
+  margin: 0px;
   text-align: center;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.App {
+  margin: 0px;
+  text-align: center;
+  height: 100%;
 }
 
 .App-logo {
