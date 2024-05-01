@@ -41,7 +41,8 @@ import store from "./AGGrid/store";
 // import App from "./LazyLoading"
 // import App from "./RenderProps";
 // import App from "./InfiniteScroll";
-import App from "./IntersectionObserver";
+// import App from "./IntersectionObserver";
+import App from "./NestedComment";
 
 // const store = createStore(
 //   rootReducer,
