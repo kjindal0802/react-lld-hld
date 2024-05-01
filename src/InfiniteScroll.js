@@ -26,6 +26,7 @@ function InfiniteScroll() {
   }, []);
 
   useEffect(() => {
+    console.log(loaderRef)
     if (loaderRef.current) {
       observer.current.observe(loaderRef.current);
     }
@@ -57,6 +58,7 @@ function InfiniteScroll() {
   }, [pageNumber, isLoading]);
 
   const handleIntersection = ([entry]) => {
+    console.log(entry);
     if (entry.isIntersecting) {
       console.log("Inside intersection");
       setIsLoading(true);

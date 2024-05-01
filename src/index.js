@@ -40,7 +40,8 @@ import store from "./AGGrid/store";
 // import App from "./SetTimeoutCustomhook";
 // import App from "./LazyLoading"
 // import App from "./RenderProps";
-import App from "./InfiniteScroll";
+// import App from "./InfiniteScroll";
+import App from "./IntersectionObserver";
 
 // const store = createStore(
 //   rootReducer,
