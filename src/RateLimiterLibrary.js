@@ -54,3 +54,5 @@ async function apiInterceptor(apiEndpoint, requestOptions) {
 async function fetchData() {
   return await apiInterceptor("/api/data", { method: "GET" });
 }
+
+fetchData();
