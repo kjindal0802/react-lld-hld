@@ -42,7 +42,9 @@ import store from "./AGGrid/store";
 // import App from "./RenderProps";
 // import App from "./InfiniteScroll";
 // import App from "./IntersectionObserver";
-import App from "./NestedComment";
+// import App from "./NestedComment";
+// import App from "./Carousel";
+import App from "./Whiteboard";
 
 // const store = createStore(
 //   rootReducer,

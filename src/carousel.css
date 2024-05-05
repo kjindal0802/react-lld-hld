@@ -1,0 +1,18 @@
+.container {
+    border: 1px solid black;
+    height: 400px;
+    width: 100%; /* Ensure the container is full width */
+    overflow: hidden; /* Hide anything outside the container */
+    position: relative; /* Needed for absolute positioning of images */
+    display: flex; /* Align images horizontally */
+  }
+  
+  .image-carousel {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    position: absolute; /* Position images on top of each other */
+  }
+  
