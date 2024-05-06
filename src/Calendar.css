@@ -1,0 +1,23 @@
+.event-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-timeline {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.event-items {
+  display: flex;
+}
+
+.event-item {
+  position: relative;
+  width: 200px;
+  background-color: grey;
+  color: black;
+}
