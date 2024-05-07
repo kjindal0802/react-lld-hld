@@ -46,7 +46,10 @@ import store from "./AGGrid/store";
 // import App from "./Carousel";
 // import App from "./Whiteboard";
 // import App from "./InfiniteScroll1";
-import App from "./Calendar";
+// import App from "./Calendar";
+// import App from "./Debounce1";
+// import App from "./customhooks1";
+import App from "./UseThrottleWrapperApp";
 
 // const store = createStore(
 //   rootReducer,

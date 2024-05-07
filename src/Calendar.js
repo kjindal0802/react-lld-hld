@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import "./Calendar.css";
 
 const data = [
@@ -41,34 +41,38 @@ const time = [
   "16",
 ];
 
-const getEventsInTimeline = (startingTime) => {
-  let blockHeight = 10;
-  let currentEvents = data.filter(({ startTime }) => {
-    return startingTime === startTime.substring(0, 2);
-  });
-
-  let resData = [];
-  currentEvents.forEach(({ name, startTime, endTime }) => {
-    let topIndex = Number(startTime.substring(2, 4)) / 5;
-    let difference = Number(endTime.substring(0, 2)) - Number(startTime.substring(0, 2));
-    let endIndex = (Number(endTime - startTime) / 5) - (difference * 8);
-
-    console.log(topIndex, endIndex, difference);
-    resData.push(
-      <div
-        className="event-item"
-        style={{ top: topIndex * blockHeight, height: endIndex * blockHeight }}
-      >
-        {name}
-      </div>
-    );
-  });
-
-  return resData;
-};
-
 export default function App() {
   const [events, setEvents] = useState(data);
+
+  const getEventsInTimeline = (startingTime) => {
+    let blockHeight = 10;
+    let currentEvents = events.filter(({ startTime }) => {
+      return startingTime === startTime.substring(0, 2);
+    });
+
+    let resData = [];
+    currentEvents.forEach(({ name, startTime, endTime }) => {
+      let topIndex = Number(startTime.substring(2, 4)) / 5;
+      let difference =
+        Number(endTime.substring(0, 2)) - Number(startTime.substring(0, 2));
+      let endIndex = Number(endTime - startTime) / 5 - difference * 8;
+
+      console.log(topIndex, endIndex, difference);
+      resData.push(
+        <div
+          className="event-item"
+          style={{
+            top: topIndex * blockHeight,
+            height: endIndex * blockHeight,
+          }}
+        >
+          {name}
+        </div>
+      );
+    });
+
+    return resData;
+  };
 
   return (
     <div className="event-container">
