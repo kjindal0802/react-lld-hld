@@ -49,7 +49,11 @@ import store from "./AGGrid/store";
 // import App from "./Calendar";
 // import App from "./Debounce1";
 // import App from "./customhooks1";
-import App from "./UseThrottleWrapperApp";
+// import App from "./UseThrottleWrapperApp";
+// import App from "./withDataHook";
+// import App from "./MouseTrackerRenderProps";
+// import App from "./BookMyShow";
+import App from "./FunctionalErrorBoundary";
 
 // const store = createStore(
 //   rootReducer,

@@ -1,6 +1,6 @@
 const data = [
   {
-    class: "gold",
+    rowClass: "gold",
     rows: [
       {
         rowNumber: "A",
@@ -14,7 +14,7 @@ const data = [
     ],
   },
   {
-    class: "silver",
+    rowClass: "silver",
     rows: [
       {
         rowNumber: "A",
@@ -30,5 +30,22 @@ const data = [
 ];
 
 export default function App() {
-  return <p> Hell\0 </p>;
+  return (
+    <div>
+      {data.map(({ rows, rowClass }) => (
+        <div className="row-class">
+          <p>Class : {rowClass.toUpperCase()}</p>
+          <div>
+            {rows.map(({ seats }) => (
+              <p>{}</p>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function RowClass() {
+    
 }
