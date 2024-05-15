@@ -53,7 +53,9 @@ import store from "./AGGrid/store";
 // import App from "./withDataHook";
 // import App from "./MouseTrackerRenderProps";
 // import App from "./BookMyShow";
-import App from "./FunctionalErrorBoundary";
+// import App from "./FunctionalErrorBoundary";
+// import App from "./Carousel";
+import App from "./Task";
 
 // const store = createStore(
 //   rootReducer,

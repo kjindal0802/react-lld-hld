@@ -27,7 +27,11 @@ export default function App() {
             src={src}
             alt={`Slide ${index}`}
             className="image-carousel"
-            style={{ transform: `translateX(${-100 * index}%)` }}
+            style={
+              index === counter
+                ? { transform: `translateX(${0}%)` }
+                : { transform: `translateX(${-100}%)` }
+            }
           />
         ))}
         <button onClick={() => handleClick("right")}>Right</button>

@@ -1,0 +1,42 @@
+/* App.css */
+.container {
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  flex-basis: 50%;
+  background-color: #f4f4f4; /* Light grey */
+  border-right: 2px solid #ddd; /* Light divider */
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.header1 {
+  background-color: #eee; /* Slightly darker grey */
+  border-bottom: 1px solid #ddd; /* Light divider */
+  height: 50%;
+}
+.header2 {
+  background-color: #eee; /* Slightly darker grey */
+  border-bottom: 1px solid #ddd; /* Light divider */
+  height: 50%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    flex-basis: auto;
+    width: 100%;
+    height: 33.3%;
+  }
+
+}
